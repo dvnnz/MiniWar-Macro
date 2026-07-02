@@ -10,7 +10,10 @@ items := [
     {name: "Artillery Depot", fn: BuyArtilleryDepot, enabled: false},
     {name: "Blackhole Generator", fn: BuyBlackHoleGenerator, enabled: false},
     {name: "Area 51", fn: BuyArea51, enabled: false},
-    {name: "Rocket Bunker", fn: BuyRocketBunker, enabled: false}
+    {name: "Rocket Bunker", fn: BuyRocketBunker, enabled: false},
+    {name: "Mech", fn: BuyMech, enabled: false},
+    {name: "Giant Skyscraper", fn: BuyGiantSkyscraper, enabled: false},
+    {name: "Double Turbo Tower", fn: BuyDoubleTurboTower, enabled: false}
 ]
 
 myGui := Gui()
@@ -58,6 +61,7 @@ BuyStuff() {
 
 ;------Functions----------
 
+;---Military---
 BuyAirBase(){
     Send("\")
     loop 3 {
@@ -188,6 +192,50 @@ BuyRocketBunker(){
     Send("\")
 }
 
+BuyMech(){
+    Send("\")
+    loop 3 {
+        Send("{Left}")
+    }
+    Send("{Enter}")
+    Sleep(1000)
+    Send("{e}")
+    Sleep(4000)
+    Send("{Down}")
+    Sleep(500)
+    Send("{Right}")
+    Send("{Right}")
+    Sleep(500)
+    Send("{Enter}")
+    Sleep(500)
+    loop 19 {
+        Sleep(100)
+        Send("{Down}")
+    }
+    Send("{Right}")
+    Sleep(100)
+    Send("{Enter}")
+    Sleep(100)
+    Send("{Right}")
+    loop 3 {
+        Send("{Up}")
+    }
+    Send("{Left}")
+    Sleep(100)
+    Send("{Left}")
+    Sleep(100)
+    Send("{Down}")
+    Sleep(100)
+    Send("{Enter}")
+    Sleep(100)
+    Send("{Left}")
+    Sleep(100)
+    Send("{Enter}")
+    Sleep(100)
+    Send("\")
+}
+
+;---Factories---
 BuyDataCenter(){
     Send("\")
     loop 3 {
@@ -282,6 +330,92 @@ BuyArea51(){
     Send("{Enter}")
     Sleep(100)
     loop 21 {
+        Sleep(100)
+        Send("{Down}")
+    }
+    Send("{Right}")
+    Sleep(100)
+    Send("{Enter}")
+    Sleep(100)
+    Send("{Right}")
+    loop 3 {
+        Send("{Up}")
+    }
+    Send("{Left}")
+    Sleep(100)
+    Send("{Left}")
+    Sleep(100)
+    Send("{Down}")
+    Sleep(100)
+    Send("{Enter}")
+    Sleep(100)
+    Send("{Left}")
+    Sleep(100)
+    Send("{Enter}")
+    Sleep(100)
+    Send("\")
+}
+
+;---Housing---
+
+BuyGiantSkyscraper(){
+    Send("\")
+    loop 3 {
+        Send("{Left}")
+    }
+    Send("{Enter}")
+    Sleep(1000)
+    Send("{e}")
+    Sleep(4000)
+    Send("{Down}")
+    Sleep(500)
+    Send("{Right}")
+    Sleep(500)
+    Send("{Enter}")
+    Sleep(500)
+    loop 12 {
+        Sleep(100)
+        Send("{Down}")
+    }
+    Send("{Right}")
+    Sleep(100)
+    Send("{Enter}")
+    Sleep(100)
+    Send("{Right}")
+    loop 3 {
+        Send("{Up}")
+    }
+    Send("{Left}")
+    Sleep(100)
+    Send("{Left}")
+    Sleep(100)
+    Send("{Down}")
+    Sleep(100)
+    Send("{Enter}")
+    Sleep(100)
+    Send("{Left}")
+    Sleep(100)
+    Send("{Enter}")
+    Sleep(100)
+    Send("\")
+}
+
+BuyDoubleTurboTower(){
+    Send("\")
+    loop 3 {
+        Send("{Left}")
+    }
+    Send("{Enter}")
+    Sleep(1000)
+    Send("{e}")
+    Sleep(4000)
+    Send("{Down}")
+    Sleep(500)
+    Send("{Right}")
+    Sleep(500)
+    Send("{Enter}")
+    Sleep(500)
+    loop 13 {
         Sleep(100)
         Send("{Down}")
     }
